@@ -22,6 +22,7 @@ COPY --from=builder /wheels /wheels
 COPY app/requirements.txt /build/requirements.txt
 RUN pip install --no-index --find-links=/wheels -r /build/requirements.txt
 
+
 # Copy your entire app folder
 COPY app /app
 

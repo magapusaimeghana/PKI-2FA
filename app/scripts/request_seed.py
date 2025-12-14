@@ -13,7 +13,7 @@ GITHUB_REPO_URL = "https://github.com/magapusaimeghana/PKI-2FA"
 API_URL = "https://eajeyq4r3zljoq4rpovy2nthda0vtjqf.lambda-url.ap-south-1.on.aws"
 
 def main():
-    pubkey_path = ROOT / "student_public.pem"
+    pubkey_path = ROOT / "/app/student_public.pem"
     if not pubkey_path.exists():
         raise FileNotFoundError(f"student_public.pem not found at {pubkey_path}")
 
